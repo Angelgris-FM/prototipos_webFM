@@ -140,6 +140,13 @@ st.text("""El acero puede ser sometido a diferentes tratamientos
 térmicos,esto con el fin de modificar sus propiedades
 mecanicas""")
 st.write("## algunos ejemplos son:")
+st.write("""-TEMPLE:calentaiento y enfriamiento rapido para aumentar la dureza
+-REVENIDO:calentamiento moderado despues del temple para reducir fragilidad
+-RECOCIDO:calentamiento lento y enfriamiento controlado para mejorar 
+la ductibilidad y eliminar tensiones internas
+-Normalizado:calentamiento y enfriamiento al aire para refinar la estructura
+""")
+st.write("para nuestro usaremos un modelo simplificado que sigue la EDP para el caso unidimensional")
 # añadiremos una imagen para ponernos en contexto
 imagen_edp=Image.open("ecuacion_edp2.png")
 imagen_edp = imagen_edp.resize((400, 400))   # ancho=600, alto=400 píxeles
@@ -168,6 +175,7 @@ elif opcion == "Visualizar gráfica de superficie":
 if st.button("Mostrar mediciones de temperaturas(set de datos base)"):
 
     st.write(df_temp)
+
 
 
 
