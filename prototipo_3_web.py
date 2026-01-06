@@ -134,8 +134,11 @@ st.title("Simulación y evolución de  temperaturas  durante la fabricación del
 st.write("""El proyecto científico propuesto consiste ,en analizar y visualizar la historia termica
             de un trozo de metal en cada una de las etapas de fabricacion del acero
         """)
-st.markdown("## ¿porque y para que?")
+st.markdown("## ¿por que y para que?")
 
+st.text("""El acero puede ser sometido a diferentes tratamientos 
+           térmicos,esto con el fin de modificar sus propiedades
+           mecanicas""")
 # añadiremos una imagen para ponernos en contexto
 imagen_edp=Image.open("ecuacion_edp2.png")
 imagen_edp = imagen_edp.resize((400, 400))   # ancho=600, alto=400 píxeles
@@ -164,6 +167,7 @@ elif opcion == "Visualizar gráfica de superficie":
 if st.button("Mostrar mediciones de temperaturas(set de datos base)"):
 
     st.write(df_temp)
+
 
 
 
