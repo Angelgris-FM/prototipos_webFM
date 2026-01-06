@@ -132,9 +132,9 @@ def temperatura_promedio(time):
 st.title("Simulación y evolución de  temperaturas  durante la fabricación del  acero")
 
 st.write("""El proyecto científico propuesto consiste ,en analizar y visualizar la historia termica
-            de un trozo de metak en cada una de las etapas de fabricacion del acero
+            de un trozo de metal en cada una de las etapas de fabricacion del acero
         """)
-
+st.markdrown("## ¿porque y para que?")
 
 # añadiremos una imagen para ponernos en contexto
 imagen_edp=Image.open("ecuacion_edp2.png")
@@ -164,6 +164,7 @@ elif opcion == "Visualizar gráfica de superficie":
 if st.button("Mostrar mediciones de temperaturas(set de datos base)"):
 
     st.write(df_temp)
+
 
 
 
