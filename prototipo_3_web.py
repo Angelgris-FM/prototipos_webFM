@@ -131,12 +131,11 @@ def temperatura_promedio(time):
 # --- Interfaz principal ---
 st.title("Simulación y evolución de  temperaturas  durante la fabricación del  acero")
 
-st.write("""El siguiente proyecto de caracter ingenieril tiene como objetivo
-            analizar y visualizar la historia termica de una barra de metal( de 1 metro)
-            durante la fabricación del acero en cada etapa usando un modelo simplificado que sigue
-            la Ecuacion diferencial parcial con condiciones de neumann en los bordes
-            (sin flujo de calor en los extremos de la barra)
+st.write("""El proyecto científico propuesto consiste ,en analizar y visualizar la historia termica
+            de un trozo de metak en cada una de las etapas de fabricacion del acero
         """)
+st.hader("¿ por que y para que?")
+
 # añadiremos una imagen para ponernos en contexto
 imagen_edp=Image.open("ecuacion_edp2.png")
 imagen_edp = imagen_edp.resize((400, 400))   # ancho=600, alto=400 píxeles
@@ -165,5 +164,6 @@ elif opcion == "Visualizar gráfica de superficie":
 if st.button("Mostrar mediciones de temperaturas(set de datos base)"):
 
     st.write(df_temp)
+
 
 
