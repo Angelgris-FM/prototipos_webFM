@@ -129,7 +129,7 @@ def temperatura_promedio(time):
     if st.button("Mostrar gráfico promedio"):
         grafico_promedio(df_temp, time)
 # --- Interfaz principal ---
-st.title("Simulación de Temperaturas  Durante la Fabricación del  Acero")
+st.title("Simulación de evolución de  temperaturas  durante la fabricación del  acero")
 
 st.write("""El siguiente proyecto de caracter ingenieril tiene como objetivo
             analizar y visualizar la historia termica de una barra de metal( de 1 metro)
@@ -165,3 +165,4 @@ elif opcion == "Visualizar gráfica de superficie":
 if st.button("Mostrar mediciones de temperaturas(set de datos base)"):
 
     st.write(df_temp)
+
