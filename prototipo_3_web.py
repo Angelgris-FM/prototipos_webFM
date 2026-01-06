@@ -7,7 +7,7 @@ import plotly.graph_objects as go # para la grafica tridimensional interactiva
 # usaremos la siguiente libreria
 import matplotlib.pyplot as plt
 from PIL import Image
-datos = loadmat(r"C:\Users\Sebastian Martin\Desktop\Streamlit\web_experimental\TempMed.mat")
+datos = loadmat("TempMed.mat")
 
 #print(datos.keys()) para ver que variables contiene ,seleccionamos la que contiene datos 
 # es decir el nombre de la variable vista en matlab
@@ -163,4 +163,5 @@ elif opcion == "Visualizar gráfica de superficie":
     
     
 if st.button("Mostrar mediciones de temperaturas(set de datos base)"):
+
     st.write(df_temp)
